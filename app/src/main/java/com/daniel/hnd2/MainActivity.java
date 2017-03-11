@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 import com.daniel.hnd2.activities.LoginActivity;
 import com.daniel.hnd2.beans.UsuarioBean;
+import com.daniel.hnd2.fragments.AjustesFragment;
 import com.daniel.hnd2.fragments.DescripcionFragment;
 import com.daniel.hnd2.fragments.ObjetosFragment;
 import com.daniel.hnd2.fragments.PerfilFragment;
@@ -84,6 +85,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fm.beginTransaction().replace(R.id.container,tipsFragment).commit();
                 break;
 
+            case R.id.item_ajustes:
+                AjustesFragment ajustesFragment = AjustesFragment.newInstance();
+                fm.beginTransaction().replace(R.id.container,ajustesFragment).commit();
+                break;
 
             case R.id.item_salir:
                 Preferencias preferencias = new Preferencias(MainActivity.this);

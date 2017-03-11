@@ -19,12 +19,16 @@ public class AjustesFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static AjustesFragment newInstance(){
+        return new AjustesFragment();
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_perfil, container, false);
+        return inflater.inflate(R.layout.fragment_ajustes, container, false);
     }
 
     @Override
