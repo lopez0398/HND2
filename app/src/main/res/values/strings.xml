@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HND2</string>
+    <string name="perfil">Perfil</string>
+    <string name="descripcion">Descripción del juego</string>
+    <string name="personajes">Personajes</string>
+    <string name="objetos">Objetos del juego</string>
+    <string name="tips">Tips sobre el juego</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="salir">Salir</string>
+    <string name="hint_usuario">Introduce el usuario</string>
+    <string name="hint_password">Introduce la contraseña</string>
+    <string name="login">Login</string>
+    <string name="registro">Regístrate</string>
+    <string name="hint_nombre">Introduce tu nombre</string>
+    <string name="hint_apellidos">Introduce tus apellidos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="compartir">Compartir</string>
+</resources>

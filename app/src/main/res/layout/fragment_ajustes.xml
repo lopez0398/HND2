@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daniel.hnd2.fragments.AjustesFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:id="@+id/txtVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.1"
+        android:textSize="30dp"
+        android:layout_margin="15dp" />
+
+    <TextView android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desarrollado por Daniel Plata"
+        android:textSize="30dp"
+        android:layout_margin="15dp"/>
+
+    <TextView android:id="@+id/txtContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacto: daniel_plata_apps1m1617@cev.com"
+        android:textSize="30dp"
+        android:layout_margin="15dp"/>
+
+</LinearLayout>
