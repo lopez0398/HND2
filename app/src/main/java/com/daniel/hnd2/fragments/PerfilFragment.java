@@ -2,7 +2,6 @@ package com.daniel.hnd2.fragments;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,10 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.daniel.hnd2.EditActivity;
+import com.daniel.hnd2.activities.EditActivity;
 import com.daniel.hnd2.Preferencias;
 import com.daniel.hnd2.R;
-import com.daniel.hnd2.activities.LoginActivity;
 import com.daniel.hnd2.beans.UsuarioBean;
 
 public class PerfilFragment extends Fragment implements View.OnClickListener {
@@ -71,5 +69,6 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(getActivity(), EditActivity.class);
+        startActivity(intent);
     }
 }

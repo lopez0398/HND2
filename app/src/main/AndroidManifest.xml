@@ -20,7 +20,7 @@
         <activity android:name=".activities.PersonajeActivity" />
         <activity android:name=".activities.ObjetoActivity" />
         <activity android:name=".activities.TipActivity" />
-        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".activities.EditActivity"></activity>
     </application>
 
 </manifest>
