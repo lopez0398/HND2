@@ -1,6 +1,7 @@
 package com.daniel.hnd2.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +44,9 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
                 !usuario.isEmpty() && !nombre.isEmpty() && !apellidos.isEmpty() && !password.isEmpty()){
             //email formato correcto, pass y pass2 iguales
             UsuarioBean usuarioBean = new UsuarioBean(nombre, apellidos, usuario, password);
+
+            Uri path = Uri.parse("android.resource://com.daniel.hnd2.activities/" + R.drawable.imagen_usuario);
+            usuarioBean.setImgPerfil(path);
 
             Preferencias preferencias = new Preferencias(RegistroActivity.this);
             preferencias.setUsuario(usuarioBean);

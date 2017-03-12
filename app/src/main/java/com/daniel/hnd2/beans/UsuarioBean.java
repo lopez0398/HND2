@@ -1,5 +1,7 @@
 package com.daniel.hnd2.beans;
 
+import android.net.Uri;
+
 import com.google.gson.Gson;
 
 import java.io.Serializable;
@@ -11,6 +13,7 @@ import java.io.Serializable;
 public class UsuarioBean implements Serializable{
 
     private String nombre, apellidos, usuario, contraseña;
+    private Uri imgPerfil;
 
     public UsuarioBean() {
     }
@@ -52,6 +55,14 @@ public class UsuarioBean implements Serializable{
 
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
+    }
+
+    public Uri getImgPerfil() {
+        return imgPerfil;
+    }
+
+    public void setImgPerfil(Uri imgPerfil) {
+        this.imgPerfil = imgPerfil;
     }
 
     public String toJson(){
