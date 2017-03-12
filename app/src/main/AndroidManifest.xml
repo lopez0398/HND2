@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,8 @@
         <activity android:name=".activities.RegistroActivity" />
         <activity android:name=".activities.PersonajeActivity" />
         <activity android:name=".activities.ObjetoActivity" />
-        <activity android:name=".activities.TipActivity"></activity>
+        <activity android:name=".activities.TipActivity" />
+        <activity android:name=".EditActivity"></activity>
     </application>
 
 </manifest>

@@ -4,30 +4,37 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/item_perfil"
-            android:title="@string/perfil" />
+            android:title="@string/perfil"
+            android:icon="@drawable/ic_person"/>
 
         <item
             android:id="@+id/item_descripcion"
-            android:title="@string/descripcion" />
+            android:title="@string/descripcion"
+            android:icon="@drawable/ic_library_books"/>
 
         <item
             android:id="@+id/item_personajes"
-            android:title="@string/personajes" />
+            android:title="@string/personajes"
+            android:icon="@drawable/ic_face"/>
 
         <item
             android:id="@+id/item_objetos"
-            android:title="@string/objetos" />
+            android:title="@string/objetos"
+            android:icon="@drawable/ic_grade"/>
 
         <item
             android:id="@+id/item_tips"
-            android:title="@string/tips" />
+            android:title="@string/tips"
+            android:icon="@drawable/ic_warning"/>
 
         <item
             android:id="@+id/item_ajustes"
-            android:title="@string/ajustes" />
+            android:title="@string/ajustes"
+            android:icon="@drawable/ic_settings"/>
         <item
             android:id="@+id/item_salir"
-            android:title="@string/salir" />
+            android:title="@string/salir"
+            android:icon="@drawable/ic_exit_to_app"/>
 
     </group>
 </menu>
