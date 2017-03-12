@@ -20,6 +20,8 @@ import com.daniel.hnd2.R;
 import com.daniel.hnd2.activities.RegistroActivity;
 import com.daniel.hnd2.beans.UsuarioBean;
 
+import java.net.URI;
+
 public class PerfilFragment extends Fragment implements View.OnClickListener {
 
     private TextView txtNombre, txtApellidos, txtUsuario;
@@ -54,7 +56,12 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
         txtNombre.setText("Nombre: " + usuarioBean.getNombre());
         txtApellidos.setText("Apellidos: " + usuarioBean.getApellidos());
         txtUsuario.setText("Usuario: " + usuarioBean.getUsuario());
-        imgPerfil.setImageURI(usuarioBean.getImgPerfil());
+
+        if(usuarioBean.getImgPerfil() == null){
+            imgPerfil.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.imagen_usuario));
+        }else{
+            imgPerfil.setImageURI(Uri.parse(usuarioBean.getImgPerfil()));
+        }
 
         btn_edit.setOnClickListener(this);
         btn_editImg.setOnClickListener(this);
@@ -105,7 +112,7 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
                 if(resultCode == getActivity().RESULT_OK){
                     Uri path = data.getData();
                     imgPerfil.setImageURI(path);
-                    usuarioBean.setImgPerfil(path);
+                    usuarioBean.setImgPerfil(path.toString());
                     Preferencias preferencias = new Preferencias(getActivity());
                     preferencias.setUsuario(usuarioBean);
                 }

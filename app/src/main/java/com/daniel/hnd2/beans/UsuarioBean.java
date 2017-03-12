@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class UsuarioBean implements Serializable{
 
     private String nombre, apellidos, usuario, contraseña;
-    private Uri imgPerfil;
+    private String imgPerfil;
 
     public UsuarioBean() {
     }
@@ -57,11 +57,11 @@ public class UsuarioBean implements Serializable{
         this.contraseña = contraseña;
     }
 
-    public Uri getImgPerfil() {
+    public String getImgPerfil() {
         return imgPerfil;
     }
 
-    public void setImgPerfil(Uri imgPerfil) {
+    public void setImgPerfil(String imgPerfil) {
         this.imgPerfil = imgPerfil;
     }
 

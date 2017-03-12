@@ -45,9 +45,6 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
             //email formato correcto, pass y pass2 iguales
             UsuarioBean usuarioBean = new UsuarioBean(nombre, apellidos, usuario, password);
 
-            Uri path = Uri.parse("android.resource://com.daniel.hnd2.activities/" + R.drawable.imagen_usuario);
-            usuarioBean.setImgPerfil(path);
-
             Preferencias preferencias = new Preferencias(RegistroActivity.this);
             preferencias.setUsuario(usuarioBean);
 
