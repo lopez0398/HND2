@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -115,6 +116,7 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
                     usuarioBean.setImgPerfil(path.toString());
                     Preferencias preferencias = new Preferencias(getActivity());
                     preferencias.setUsuario(usuarioBean);
+
                 }
                 break;
         }
