@@ -8,25 +8,54 @@
 
     <include layout="@layout/toolbar"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"/>
+
     <EditText android:id="@+id/editNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellidos:"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"/>
 
     <EditText android:id="@+id/editApellidos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"/>
+
     <EditText android:id="@+id/editUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"/>
+
     <EditText android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:inputType="textPassword"/>
 
     <Button android:id="@+id/btn_cambios"
         android:layout_width="match_parent"

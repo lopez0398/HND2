@@ -97,7 +97,9 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()){
             case R.id.btn_edit:
                 Intent intent = new Intent(getActivity(), EditActivity.class);
+
                 startActivity(intent);
+
                 break;
 
             case R.id.btn_editImg:
@@ -132,4 +134,5 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
                 break;
         }
     }
+
 }
