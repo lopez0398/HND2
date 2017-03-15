@@ -1,10 +1,14 @@
 package com.daniel.hnd2.fragments;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
@@ -97,9 +101,16 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.btn_editImg:
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                    //Verifica permisos para Android 6.0+
+                    if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+                        ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 225); //Pedimos los permisos para lectura en almacenamiento
+                    }
+                }
                 Intent intentGaleria = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 intentGaleria.setType("image/*");
                 startActivityForResult(intentGaleria.createChooser(intentGaleria,"Selecciona una app de imagen"), PICTURE_KEY);
+
                 break;
         }
     }
